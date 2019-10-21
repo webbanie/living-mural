@@ -5,71 +5,110 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="Art is everywhere, and everywhere is art.">
+  <meta name="author" content="Stéphanie Pires">
 
-  <title>The Big Picture - Start Bootstrap Template</title>
+  <title>Living Arts</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/the-big-picture.css" rel="stylesheet">
+  <link href="css/shop-homepage.css" rel="stylesheet">
 
 </head>
 
 <body>
 
   <!-- Navigation -->
-  <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="sideNav">
     <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <a class="navbar-brand" href="#">Living Arts</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home
+            <a class="nav-link" href="index.html">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="photos.html">Murals</a>
+          </li>          <li class="nav-item">
+            <a class="nav-link" href="videos.html">Animations</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#">Paintings</a>
           </li>
         </ul>
       </div>
-    </div>container
-  </nav>-->
+    </div>
+  </nav>
 
   <!-- Page Content -->
-  <section>
-    <div class="">
-      <div class="row" style="
-    width: 100%;
-">
-        <div class="col-lg-3" style="margin-left: 20px">
-          <article>
-    <h1>We&rsquo;ll be back soon!</h1>
-    <div>
-        <p>Sorry for the inconvenience but we&rsquo;re performing some maintenance at the moment.</p>
-        
-    </div>
-</article>
+  <div class="container py-4">
+    
+<section class="container2">
+    <article class="row">
+        <div id="player1-col" class="col-md-4 col-xs-2">
+            <div id="player1" class="portrait">
+                <img src="img/308x560_1.jpg" class="img-responsive player" style="border: 1px solid #38e1ba;"/>
+            </div>
+            <div id="content1">
+              <h1 class="menu-titles menu-title-1" style="background-color: #198f75;">Discover the beauty of the streets</h1>
+              <p class="menu-descriptions menu-description-1" style="">Static and full of meaning, the paintings 
+
+              <br>Sometimes conveying messages or giving way to the abstract, the beauty of this art follows us at every street corner.</p>
+              <a href="photos.html"><p class="menu-nav" style="color: #176050;">SEE THE MURALS...</p></a>
+            </div>
         </div>
-      </div>
+        <div id="player2-col" class="col-md-4 col-xs-2 roster">
+            <div id="player2" class="portrait">
+                <img src="img/308x560_2.jpg" class="img-responsive player" style="border: 1px solid #38e13d;"/>
+            </div>
+            <div id="content2">
+              <h1 class="menu-titles menu-title-2" style="background-color: #478c40;">Art in Motion</h1>
+              <p class="menu-descriptions menu-description-2" style="">
+                The paintings, as varied as they are, leave subjectively emanated a melody and let us imagine movements thus giving life to the work.
+
+              <br>Let yourself be guided by some personal animated interpretations of these works.</p>
+              <a href="photos.html"><p class="menu-nav" style="color: #176050;">SEE THE VIDEOS...</p></a>
+            </div>
+        </div>
+        <div id="player3-col" class="col-md-4 col-xs-2 roster">
+            <div id="player3" class="portrait">
+                <img src="img/308x560_3.jpg" style="border: 1px solid #e1dc38"/>
+            </div>
+            <div id="content3"><h1>This is the content for player 3</h1>
+                <br/>
+                <img src="http://lorempixel.com/400/200/" alt="" />
+            </div>
+        </div>
+        <br class="clearfix" />
+        <div class="col-xs-8 col-xs-offset-3 content"></div>
+    </article>
+</section>
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-2 fixed-bottom">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Webbanie 2019</p>
     </div>
-  </section>
+    <!-- /.container -->
+  </footer>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <script type="text/javascript" src="vendor/myVue.js"></script>
+  
 
 </body>
 
