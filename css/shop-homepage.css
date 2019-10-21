@@ -30,11 +30,18 @@ h1{
 p{
 	font-size: large;
 }
+
 a:link { text-decoration: none; } a:visited { text-decoration: none; } a:hover { text-decoration: none; } a:active { text-decoration: none; }
+
+img{
+	-webkit-box-shadow: 14px 14px 16px -8px rgba(0,0,0,1);
+-moz-box-shadow: 14px 14px 16px -8px rgba(0,0,0,1);
+box-shadow: 14px 14px 16px -8px rgba(0,0,0,1);
+}
 
 .menu-nav{
 	background-color: #ffffff;
-	padding: 13px;
+	padding: 0.8rem;
 }
 .menu-descriptions {
     background-color: #0f0d0e;color: white;
