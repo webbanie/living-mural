@@ -46,7 +46,7 @@ var murals = new Vue({
 			var captionText = document.getElementById("caption");
 			
 			modal.style.display = "block";
-			modalImg.src = './img/mural_to' + this.id + '.jpg';
+			modalImg.src = './img/big/mural_to' + this.id + '.jpg';
 			captionText.innerHTML = this.title;
 
 			// Get the <span> element that closes the modal
@@ -56,6 +56,6 @@ var murals = new Vue({
 			span.onclick = function() {
         		modal.style.display = "none";
 			}
-        }
-    }
+    },
+  }
 });

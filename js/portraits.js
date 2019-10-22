@@ -12,7 +12,7 @@ var portraits = new Vue({
   },
 });
 
-/**/$('.portrait').on('click', function () {
+$('.portrait').on('click', function () {
     $('.portrait').not(this).toggle("drop");
     $('.content').toggle("drop");
 
@@ -32,6 +32,3 @@ var portraits = new Vue({
     
     $('.content').html($parentDiv.find('[id^="content"]').html());
 });
-
-//******************DATA
-
