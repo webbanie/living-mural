@@ -254,6 +254,9 @@ article.row{
     padding: 16px 8px;
     margin-bottom: 0;}
 
+  .container2 {
+    overflow: inherit;
+  }
   img, #portraits .img-responsive{
     width: 120% !important;
   }
