@@ -45,6 +45,11 @@ img, div.content{
 box-shadow: 14px 14px 16px -8px rgba(0,0,0,1);
 }
 
+.list-group-item {
+    background-color: transparent;
+    border: 0;    height: 50px;
+}
+
 .menu-nav{
 	background-color: #ffffff;
 	padding: 0.8rem;
@@ -276,7 +281,7 @@ div.container > div.row {
   .container2 {
     overflow: inherit;
   }
-  img, #portraits .img-responsive{
+  #portraits .img-responsive{
     width: 120% !important;
   }
   
@@ -308,5 +313,17 @@ div.container > div.row {
     padding: 25px 0;
   }
 
-  div.content {margin-bottom: 50px}
+  div.content {
+    margin-bottom: 50px;
+    top: 54px; //85px;
+    width: 91%;
+  }
+
+  h1 {
+    font-size: 0.9rem;
+  }
+
+  p {
+    font-size: small;
+  }
 }
