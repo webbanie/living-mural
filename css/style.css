@@ -8,8 +8,14 @@
     //background-color: #151e28!important;
     background-color: #000!important;
 }
+iframe{
+  border: 0;
+}
 .col-xs-2{
 	width: 32%
+}
+.col-xs-6{
+  width: 50%
 }
 .navbar-dark .navbar-brand {
     //color: #38e1ba;
