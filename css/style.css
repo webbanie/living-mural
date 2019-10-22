@@ -334,6 +334,6 @@ div.container > div.row {
   }
 
   .menu-descriptions span {
-    padding-top: 0;
+    padding-top: 0 !important;
   }
 }
