@@ -4,9 +4,12 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
  */
 .bg-dark {
-    background-color: #38e1ba0a!important;
+    //background-color: #38e1ba0a!important;
+    background-color: #151e28!important;
 }
-
+.col-xs-2{
+	width: 30%
+}
 .navbar-dark .navbar-brand {
     //color: #38e1ba;
     font-family:Lucida Console;
@@ -33,7 +36,7 @@ p{
 
 a:link { text-decoration: none; } a:visited { text-decoration: none; } a:hover { text-decoration: none; } a:active { text-decoration: none; }
 
-img{
+img, div.content{
 	-webkit-box-shadow: 14px 14px 16px -8px rgba(0,0,0,1);
 -moz-box-shadow: 14px 14px 16px -8px rgba(0,0,0,1);
 box-shadow: 14px 14px 16px -8px rgba(0,0,0,1);
@@ -49,8 +52,20 @@ box-shadow: 14px 14px 16px -8px rgba(0,0,0,1);
     height: 64%;line-height: 45px;
 }
 
+.menu-descriptions span {display:block}
+
+.menu-descriptions::first-letter, .menu-descriptions span::first-letter {
+  font-size: 20px;
+  padding: 0 4px;color: #151e28;background-color: white;
+  //border-radius: 50px;
+}
+
 .menu-descriptions.menu-description-1 {
 background-image: url("../img/bg_desc1.jpg");
+}
+
+.menu-descriptions::first-letter {
+
 }
 
 .menu-descriptions.menu-description-2 {
@@ -168,6 +183,7 @@ article.row{
     position: relative;
     margin-top: 10px;
     margin-bottom: 10px;
+    overflow: hidden;
 }
 .portrait {
     position: relative;
@@ -197,7 +213,7 @@ article.row{
     //border-radius: 5px;
 }
 
-@media (min-width: 700px){
+@media (min-width: 700px){}
 	/*SLIDING MOVEMENT */
 	 #player2-col, #player3-col, #player4-col, #player5-col, .content {
 	    transition: transform .5s linear;
@@ -219,14 +235,42 @@ article.row{
 	    transform: translateX(-500%);
 	}
 /*--------------------------------*/	
-
+@media (max-width: 1200px){
+  .menu-description-2 {
+      padding: 20px;
+      line-height: 40px;
+  }
 }
 
-@media (max-width: 780px){
-	.menu-descriptions {
-	    padding: 40px;
-	    height: 64%;line-height: 30px;
+@media (max-width: 990px){
+	.navbar-dark .navbar-toggler {
+	    color: rgb(255, 255, 255);
+	    border-color: transparent;
 	}
+}
+
+@media (max-width: 976px){
+	h1 {
+    padding: 16px 8px;
+    margin-bottom: 0;}
+  
+  div.content{
+    height: auto;
+  }
+
+  .menu-nav {
+    margin-bottom: 0;
+  }
+
+  .menu-descriptions {
+	    padding: 20px;
+	    height: 64%;
+      line-height: 30px;margin-bottom: 0;
+	}
+
+	.menu-description-1 {
+    //height: 59%;
+    }
 }
 
  #player1, #player2, #player3, #player4, #player5, .content {
