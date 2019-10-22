@@ -326,4 +326,8 @@ div.container > div.row {
   p {
     font-size: small;
   }
+
+  .menu-descriptions span {
+    padding-top: 0;
+  }
 }
