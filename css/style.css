@@ -307,4 +307,6 @@ div.container > div.row {
   div.container > div.row {
     padding: 25px 0;
   }
+
+  div.content {margin-bottom: 50px}
 }
