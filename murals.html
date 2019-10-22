@@ -23,7 +23,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="sideNav">
     <div class="container">
-      <a class="navbar-brand" href="#">Living Arts</a>
+      <a class="navbar-brand" href="index.html">Living Arts</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -51,14 +51,15 @@
   <!-- Page Content -->
   <div class="container">
 
-    <div class="row">
+    <div class="row py-2">
 
       <div class="col-lg-2">
 
-        <div class="">
-          <a href="#" id="canada" class="list-group-item">Canada</a>
-          <a href="#" class="list-group-item">Category 2</a>
-          <a href="#" class="list-group-item">Category 3</a>
+        <div style="display: flex;" class="row py-2 text-center" >
+          <a href="#" id="canada" class=" cities-group list-group-item col">Toronto</a>
+          <a href="#" class=" cities-group list-group-item col">Paris</a>
+          <a href="#" class=" cities-group list-group-item col">California</a>
+          <a href="#" class=" cities-group list-group-item col">Praia</a>
         </div>
 
       </div>
@@ -72,7 +73,7 @@
 
           <div class="col-md-2 col-xs-2 mb-4" v-for="item in items">
             <div v-bind:class="'card h-100 ' + item.city" v-bind:id="item.id" @click="itemClicked(item)">
-              <img class="card-img-top" v-bind:src="'img/mural_to' + item.id + '.jpg'" v-bind:alt="item.title">
+              <img class="card-img-top" v-bind:src="'img/small/mural_to' + item.id + '.jpg'" v-bind:alt="item.title">
             </div>
           </div>
           
@@ -80,20 +81,20 @@
         </div>
 <!--**************************************-->
 
-        <!-- /.row -->
-          <!-- The Modal -->
-          <div id="myModal" class="modal" style="top: 55px;">
+      <!-- /.row -->
+        <!-- The Modal -->
+        <div id="myModal" class="modal" style="top: 55px;">
 
-            <!-- The Close Button -->
-            <span class="close">&times;</span>
+          <!-- The Close Button -->
+          <span class="close">&times;</span>
 
-            <!-- Modal Content (The Image) -->
-            <img class="modal-content" id="img01">
+          <!-- Modal Content (The Image) -->
+          <img class="modal-content" id="img01">
 
-            <!-- Modal Caption (Image Text) -->
-            <div id="caption">{{ title }}</div>
-            
-          </div>
+          <!-- Modal Caption (Image Text) -->
+          <div id="caption">{{ title }}</div>
+          
+        </div>
 
 
 
